@@ -1,0 +1,117 @@
+/* ===== SECCIÓN GALERÍA ===== */
+.galeria {
+  background-color: var(--color-bordo); /* fondo bordo */
+  color: var(--color-blanco); /* títulos blancos */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Títulos fuera del contenedor de imágenes */
+.galeria h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-blanco);
+}
+
+.galeria h3 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: var(--color-blanco);
+}
+
+/* Contenedor de imágenes */
+.galeria-container {
+  max-width: 80%; /* ancho máximo del contenedor */
+  margin: 0 auto; /* centrar horizontalmente */
+}
+
+/* ===== FILAS Y COLUMNAS ===== */
+.galeria-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.galeria-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Primer row: asimétrico */
+.galeria-col.small {
+  flex: 1; /* ocupa 1 parte */
+}
+
+.galeria-col.large {
+  flex: 2; /* ocupa 2 partes */
+}
+
+/* Segundo row reorganizado */
+.galeria-col.single {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.galeria-col.double {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ===== IMÁGENES ===== */
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.02);
+}
+
+
+.galeria-cta {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.galeria-cta button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-title);
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--color-turquesa);
+  color: var(--color-blanco);
+  transition: 0.3s;
+}
+
+.galeria-cta button:hover {
+  background-color: var(--color-bordo);
+}
+
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .galeria-row {
+    flex-direction: column;
+  }
+
+  .galeria-col.small,
+  .galeria-col.large,
+  .galeria-col.single,
+  .galeria-col.double {
+    flex: 1 1 100%;
+  }
+}

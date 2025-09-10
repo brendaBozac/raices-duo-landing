@@ -1,0 +1,59 @@
+.trayectoria {
+  background: linear-gradient(to bottom, var(--color-turquesa), var(--color-rosa));
+  color: var(--color-negro);
+
+  text-align: center;
+}
+
+/* Título h2 */
+.trayectoria h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-bordo);
+}
+
+/* Row principal */
+.trayectoria-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Columnas */
+.col-left, .col-right {
+  flex: 1 1 300px;
+}
+
+/* Imagen columna izquierda */
+.trayectoria-img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Imagenes decorativas */
+.wave-top, .wave-bottom {
+  width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+.wave-bottom {
+margin-top: 5vmax;
+margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .trayectoria-row {
+    flex-direction: column;
+  }
+  .trayectoria-img {
+    max-width: 100%;
+  }
+}

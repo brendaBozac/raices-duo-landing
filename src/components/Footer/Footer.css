@@ -1,0 +1,91 @@
+.footer {
+  background: linear-gradient(to bottom, var(--color-rosa), var(--color-bordo));
+  color: var(--color-blanco);
+  padding: 3rem 2rem 1rem 2rem;
+  text-align: center;
+}
+
+/* Logo */
+.footer-logo img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-logo h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: var(--font-subtitle);
+}
+
+/* Contenedor columnas */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.footer-col {
+  flex: 1 1 250px;
+  text-align: left;
+}
+
+.footer-col h4 {
+  margin-bottom: 1rem;
+  font-family: var(--font-title);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: var(--color-blanco);
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: var(--color-turquesa);
+}
+
+/* Botones de contacto */
+.footer-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-col {
+    text-align: center;
+  }
+  .footer-buttons {
+    justify-content: center;
+  }
+}

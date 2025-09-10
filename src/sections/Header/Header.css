@@ -5,41 +5,62 @@ header {
   justify-content: center;
   background-color: var(--color-rosa);
   flex-wrap: wrap;
+
 }
 
 .header-left, .header-right {
-  flex: 1 1; /* cada columna ocupa igual espacio, mínimo 300px */
-  /* flex: 1 1 300px; */ /* cada columna ocupa igual espacio, mínimo 300px */
-   
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-left {
-    /* border: solid 2px rgb(255, 0, 242); */
-    display: flex;
-  align-items: center;    /* centra verticalmente */
-  justify-content: center;
-
+  /* Imagen de los músicos */
 }
-/* 
-.header-right {
-
-    border: solid 2px yellow;
-}
- */
 
 .header-img {
-  max-width: 80%;  /* nunca excede la columna */
+  max-width: 80%;
   height: auto;
-  /* border-radius: 12px; */
   margin-bottom: 0;
-
-
-/* border: solid 2px rgb(30, 255, 0); */
 }
-  
-header h1 {
-  font-size: 3rem; 
-  margin: 0;
-  text-align: left; 
-/* border: solid 2px rgb(5, 5, 19); */
+
+.header-logo {
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* H1 oculto para SEO */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .header-left, .header-right {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .header-img {
+    max-width: 90%;
+  }
+
+  .header-logo {
+    max-width: 80%;
+  }
 }

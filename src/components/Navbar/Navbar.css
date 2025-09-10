@@ -6,7 +6,10 @@ nav {
   padding: 1rem 2rem;
 }
 
-nav .logo { font-size: 1.5rem; }
+nav .logo img {
+  max-height: 50px; /* ajusta el tamaño del logo */
+  height: auto;
+}
 
 nav ul {
   display: flex;
@@ -18,4 +21,10 @@ nav ul li a {
   text-decoration: none;
   color: var(--color-negro);
   font-weight: 600;
+  font-family: var(--font-subtitle); /* Lato semibold */
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--color-turquesa);
 }
