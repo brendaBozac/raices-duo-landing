@@ -1,0 +1,90 @@
+/* Sección Resena */
+.resena {
+  position: relative;
+  background: linear-gradient(to bottom, var(--color-rosa), var(--color-turquesa));
+  color: var(--color-negro);
+  overflow: hidden;
+  text-align: center;
+
+}
+
+/* Imagen decorativa superior */
+.resena-wave-top {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: -5px; /* superposición ligera con la sección */
+}
+
+/* Row principal */
+.resena-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+
+  padding: 2vmax;
+}
+
+/* Columna izquierda: texto y botón */
+.resena-row .col-left {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Columna derecha: imagen */
+.resena-row .col-right {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resena-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Imagen decorativa inferior */
+.resena-guardapampa {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* margin-top: -5px; */ /* superposición con la sección siguiente */
+  margin-top: 5vmax;
+  margin-bottom: 0;
+}
+
+/* Tipografía */
+.resena h2 {
+  font-family: var(--font-title);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.resena p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resena-row {
+    flex-direction: column; /* apilar columnas */
+  }
+
+  .resena-img {
+    max-width: 80%;
+    margin: 1rem auto 0;
+  }
+}

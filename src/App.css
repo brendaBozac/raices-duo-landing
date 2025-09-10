@@ -1,10 +1,48 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+ #root {
+  
+  --color-bordo: #40140A;
+  --color-bordo-oscuro: #2b0d07; 
+  --color-rosa: #c7b1a5;
+  --color-blanco: #f2efe9;
+  --color-turquesa: #6a8e7f;
+  --color-negro: #09090b;
+
+  --font-title: 'Montserrat', sans-serif;
+  --font-subtitle: 'Lato', sans-serif;
+  --font-body: 'Lato', sans-serif;
+
+
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+/*   line-height: 1.6; */
+}
+
+/* section {
+  padding: 4rem 2rem;
+}
+ */
+
+h1, h2, button {
+  font-family: var(--font-title);
+  font-weight: 700;
+}
+
+h3 {
+  font-family: var(--font-subtitle);
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+/* 
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -41,6 +79,3 @@
   color: #888;
 }
  */
-
-
-

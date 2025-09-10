@@ -1,0 +1,90 @@
+/* Fondo degradado de toda la sección */
+#presentacion {
+  background: linear-gradient(to bottom, var(--color-bordo), var(--color-rosa));
+  color: var(--color-blanco);
+  padding: 0;
+}
+
+/* Imagen decorativa superior */
+.guardapampa {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Row con dos columnas */
+.presentacion-row {
+  display: flex;
+  flex-direction: row;  /* fila en desktop */
+  flex-wrap: wrap;      /* permite apilar en mobile */
+  align-items: center;  /* centra verticalmente si columnas tienen distinta altura */
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+/* Columnas */
+.col-left, .col-right {
+  flex: 1 1 300px; /* igual espacio, mínimo 300px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente contenido dentro de cada columna */
+}
+
+/* Texto */
+.col-left h2 {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.col-left h3 {
+  font-family: var(--font-subtitle);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.col-left p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Imagen de presentación */
+.presentacion-img {
+  max-width: 100%;  /* no excede columna */
+  width: 400px;     /* ancho máximo deseado */
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;   /* centrada horizontalmente */
+}
+
+
+.waves-one {
+  width: 100%;      /* ocupa todo el ancho de la sección */
+  height: auto;     /* mantiene proporción */
+  display: block;
+/*   margin-top: -5px; */ /* opcional: superpone un poquito sobre la sección siguiente */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .presentacion-row {
+    flex-direction: column; /* apila columnas */
+    padding: 2rem 1rem;
+  }
+
+  .presentacion-img {
+    max-width: 80%;
+  }
+
+  .col-left h2 {
+    font-size: 2rem;
+  }
+
+  .col-left h3 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,36 @@
+.videos {
+  /* Fondo bordo */
+  background-color: var(--color-bordo);  
+  /* Si querés degradado, reemplazá la línea de arriba por: 
+     background: linear-gradient(to bottom, var(--color-bordo), var(--color-rosa));
+  */
+  color: var(--color-blanco); /* texto visible sobre fondo oscuro */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.videos-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.video-col {
+  flex: 1 1 300px; /* cada columna ocupa espacio equilibrado, mínimo 300px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-col h4 {
+  margin-bottom: 1rem;
+}
+
+.video-col iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 280px;
+  border-radius: 8px;
+}

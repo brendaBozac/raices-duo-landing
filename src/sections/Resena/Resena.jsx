@@ -1,21 +1,39 @@
+import './Resena.css';
 import Boton from "../../components/Boton/Boton";
+
+// Importar imágenes
+import waveImg from "../../../Img/wave-nosotros.svg";
+import nosotrosImg from "../../../Img/nosotros.jpg";
+import guardapampaImg from "../../../Img/guardapampaOscuro.png";
 
 function Resena() {
   return (
-    <section id="resena">
-      <h2>Reseña</h2>
+    <section className="resena" id="resena">
+      {/* Imagen decorativa superior */}
+      <img src={waveImg} alt="Decoración waves" className="resena-wave-top" />
+
+      {/* Row principal */}
       <div className="resena-row">
+        {/* Columna izquierda: texto y botón */}
         <div className="col-left">
-          <img src="/img/resena.png" alt="Reseña" />
-        </div>
-        <div className="col-right">
+          <h2>Un poco más Sobre Nosotros</h2>
           <p>
-            Más allá de la experiencia individual, Raíces Dúo recorre escenarios
-            con una propuesta auténtica y sensible.
+            Hemos recorrido distintas provincias llevando nuestro folklore a bares, festivales,
+            diversos escenarios y programas de radio. 
+            Mayormente nos presentamos en formato de dúo, pero en ocasiones nos acompañan músicos amigos.
+            Cada show es nuestra celebración de las canciones que nos inspiran.
           </p>
-          <Boton>Quiero contactarme</Boton>
+          <Boton>Quiero Contactarme</Boton>
+        </div>
+
+        {/* Columna derecha: imagen */}
+        <div className="col-right">
+          <img src={nosotrosImg} alt="Sobre Nosotros" className="resena-img" />
         </div>
       </div>
+
+      {/* Imagen decorativa inferior */}
+      <img src={guardapampaImg} alt="Detalle decorativo" className="resena-guardapampa" />
     </section>
   );
 }
