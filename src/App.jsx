@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main>
+      <main >
         <Header />
         <Presentacion />
         <Videos />
