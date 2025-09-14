@@ -12,17 +12,22 @@ header {
   flex: 1 1 300px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  
 }
 
 .header-left {
-  /* Imagen de los músicos */
+  justify-content: end;
+}
+
+.header-right {
+  justify-content: start;
 }
 
 .header-img {
   max-width: 80%;
   height: auto;
   margin-bottom: 0;
+  filter: contrast(110%) brightness(95%) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .header-logo {
@@ -47,20 +52,25 @@ header {
 /* Responsive */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    padding: 1rem;
+    flex-flow: column-reverse;
+    padding: 1rem 1rem 0 1rem;
   }
 
   .header-left, .header-right {
     flex: 1 1 100%;
     justify-content: center;
+    
   }
 
+ 
+
   .header-img {
-    max-width: 90%;
+    max-width: 80%;
+    
   }
 
   .header-logo {
     max-width: 80%;
+    margin: 4vmax 0;
   }
 }

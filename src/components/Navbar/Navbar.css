@@ -1,53 +1,10 @@
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-rosa);
-  padding: 1rem 2rem;
-}
-
-nav .logo img {
-  max-height: 50px; 
-  height: auto;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: var(--color-negro);
-  font-weight: 600;
-  font-family: var(--font-subtitle); 
-  transition: 0.3s;
-}
-
-nav ul li a:hover {
-  color: var(--color-turquesa);
-}
- */
-
-#header {
-  /* width: 100%; */
-  /* height: 75px; */
-/*   position: fixed;
-  top: 0;
-  z-index: 9999999; */
-}  
-
 
 .navbar {
- 
   width: 100%;
   margin-bottom: 0;
-  
- 
+
 }  
     
-
 .navbarContainer {
   display: flex;
   justify-content: center;
