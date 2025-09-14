@@ -1,15 +1,16 @@
 /* Fondo degradado de toda la sección */
 #presentacion {
-  background: linear-gradient(to bottom, var(--color-bordo), var(--color-rosa));
+  background: linear-gradient(to bottom, var(--color-bordo) 50%, var(--color-rosa));
   color: var(--color-blanco);
-  padding: 0;
+  padding: 0.5vmax 0 0 0;
 }
 
 /* Imagen decorativa superior */
 .guardapampa {
-  width: 100%;
+  width: 140%;
   height: auto;
   display: block;
+  
 }
 
 /* Row con dos columnas */
