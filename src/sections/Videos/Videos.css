@@ -5,8 +5,9 @@
      background: linear-gradient(to bottom, var(--color-bordo), var(--color-rosa));
   */
   color: var(--color-blanco); /* texto visible sobre fondo oscuro */
-  padding: 4rem 2rem;
+  padding: 1rem 2rem;
   text-align: center;
+  margin-top: -4vmax;
 }
 
 .videos-row {

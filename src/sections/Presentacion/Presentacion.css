@@ -3,11 +3,12 @@
   background: linear-gradient(to bottom, var(--color-bordo) 50%, var(--color-rosa));
   color: var(--color-blanco);
   padding: 0.5vmax 0 0 0;
+  overflow: hidden;
 }
 
 /* Imagen decorativa superior */
 .guardapampa {
-  width: 140%;
+  width: 130%;
   height: auto;
   display: block;
   
@@ -18,7 +19,7 @@
   display: flex;
   flex-direction: row;  /* fila en desktop */
   flex-wrap: wrap;      /* permite apilar en mobile */
-  align-items: center;  /* centra verticalmente si columnas tienen distinta altura */
+  align-items: center;  /* centra verticalmente si las columnas tienen distinta altura */
   justify-content: center;
   gap: 2rem;
   padding: 3rem 2rem;
@@ -32,10 +33,15 @@
   justify-content: center; /* centra verticalmente contenido dentro de cada columna */
 }
 
+/* .col-left  {
+ margin-left: 8vmax;
+} */
+
+
 /* Texto */
 .col-left h2 {
   font-family: var(--font-title);
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -55,7 +61,7 @@
 /* Imagen de presentación */
 .presentacion-img {
   max-width: 100%;  /* no excede columna */
-  width: 400px;     /* ancho máximo deseado */
+  width: 350px;     /* ancho máximo deseado */
   height: auto;
   border-radius: 12px;
   display: block;
@@ -67,7 +73,7 @@
   width: 100%;      /* ocupa todo el ancho de la sección */
   height: auto;     /* mantiene proporción */
   display: block;
-/*   margin-top: -5px; */ /* opcional: superpone un poquito sobre la sección siguiente */
+  margin-top: -15px;   
 }
 
 /* Responsive */
@@ -75,6 +81,13 @@
   .presentacion-row {
     flex-direction: column; /* apila columnas */
     padding: 2rem 1rem;
+  }
+
+  .guardapampa {
+    width: 300%;
+    height: auto;
+    display: block;
+    
   }
 
   .presentacion-img {

@@ -1,7 +1,4 @@
 import './Presentacion.css';
-
-
-
 import Boton from "../../components/Boton/Boton";
 import guardapampaImg from "../../../Img/guardapampaClaro.png";
 import presentacionImg from "../../../Img/presentacion.jpg";

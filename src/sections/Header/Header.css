@@ -3,12 +3,14 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-rosa);
+  /* background-color: var(--color-rosa); */
+  background: radial-gradient(circle, #C7B1A5 0%, #9e7f73 60%, #5a4036 100%);
   flex-wrap: wrap;
 
 }
 
 .header-left, .header-right {
+  margin-top: 3vmax;
   flex: 1 1 300px;
   display: flex;
   align-items: center;
@@ -31,9 +33,9 @@ header {
 }
 
 .header-logo {
-  max-width: 70%;
+  max-width: 60%;
   height: auto;
-  margin: 0 auto;
+  margin: 0 0  0 4vmax;
 }
 
 /* H1 oculto para SEO */
@@ -65,12 +67,12 @@ header {
  
 
   .header-img {
-    max-width: 80%;
+    max-width: 110%;
     
   }
 
   .header-logo {
     max-width: 80%;
-    margin: 4vmax 0;
+    margin: 2vmax 0;
   }
 }
