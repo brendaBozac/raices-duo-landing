@@ -1,8 +1,11 @@
 .trayectoria {
   background: linear-gradient(to bottom, var(--color-turquesa), var(--color-rosa));
-  color: var(--color-negro);
+  color: var(--color-bordo);
 
-  text-align: center;
+ text-align: center;
+  /* padding: 5vmax 2rem; */
+  position: relative;
+  overflow: hidden;
 }
 
 /* Título h2 */
@@ -15,29 +18,52 @@
 /* Row principal */
 .trayectoria-row {
   display: flex;
-  gap: 2rem;
+  padding: 5vmax 2rem;
+/*   gap: 2rem; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  /* border: solid 2px green; */
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* Columnas */
 .col-left, .col-right {
   flex: 1 1 300px;
 }
+/* 
+.col-right {
+  min-height: 200px;
+} */
+
+
+.col-right p{
+  /* border: solid 2px rgb(67, 14, 189); */
+  width: 80%;
+  text-align: center;
+/*   width: 70%; */
+}
+
+/* .col-left {
+ 
+}
+ */
 
 /* Imagen columna izquierda */
 .trayectoria-img {
-  max-width: 80%;
+  /* max-width: 80%; */
+  width: 100%;
   height: auto;
   border-radius: 12px;
   display: block;
   margin: 0 auto;
+    /* border: solid 2px black; */
 }
 
 /* Imagenes decorativas */
 .wave-top, .wave-bottom {
-  width: 100%;
+  width: 130%;
   height: auto;
   display: block;
 
@@ -52,8 +78,48 @@ margin-bottom: 0;
 @media (max-width: 768px) {
   .trayectoria-row {
     flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2vmax;
+    width: 80%;
+    margin: 0 auto;
+    /* border: solid 2px yellow; */
   }
+
+  .trayectoria h2 {
+
+  margin-bottom: 0;
+  color: var(--color-bordo);
+}
+
+  .col-right p{
+    width: 90%;
+  }
+
   .trayectoria-img {
-    max-width: 100%;
+    width: 90%;          /* ocupa buena parte del contenedor */
+  /*   max-width: 350px;  */   /* no excede este tamaño */
+    height: auto;        /* mantiene la proporción original */
+    margin: 0 auto;      /* centrada horizontalmente */
+    object-fit: cover;
+    /* border: solid 2px yellow; */
+    padding: 0;
   }
+
+  .col-right {
+    display: flex;
+    justify-content: center; /* asegura que la imagen quede centrada */
+    /* border: 2px solid green; */
+  }
+
+  .wave-top {
+    display: none;
+  }  
+
+
+  .wave-bottom {
+    width: 300%;
+  margin-top: 5vmax;
+  margin-bottom: 0;
+  }
+
 }

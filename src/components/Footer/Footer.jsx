@@ -8,26 +8,26 @@ function Footer() {
     <footer className="footer">
       {/* Logo */}
       <div className="footer-logo">
-        <img src={logo} alt="Raíces Dúo Logo" />
+        {/* <img src={logo} alt="Raíces Dúo Logo" /> */}
         <h3>La esencia del Auténtico Folklore</h3>
       </div>
 
       {/* Contenido principal: dos columnas */}
       <div className="footer-content">
         {/* Columna izquierda */}
-        <div className="footer-col">
+        {/* <div className="footer-col">
           <h4>Archivos descargables para Diseño Gráfico</h4>
           <ul>
             <li><a href="/downloads/resena-prensa.pdf" download>Reseña para Prensa</a></li>
             <li><a href="/downloads/archivos-diseno.zip" download>Archivos de Diseño</a></li>
             <li><a href="/downloads/rider-tecnico.pdf" download>Rider Técnico</a></li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Columna derecha */}
         <div className="footer-col">
           <h4>Por Consultas y Contrataciones</h4>
-          <p>Comunicate directamente a Nuestro Whatsapp o por Redes Sociales</p>
+          <p>Comunicate directamente a Nuestro Whatsapp <br/> o por Redes Sociales</p>
           <div className="footer-buttons">
             <Boton onClick={() => window.open("https://wa.me/1234567890", "_blank")}>
               <FaWhatsapp /> Whatsapp
@@ -37,10 +37,19 @@ function Footer() {
             </Boton>
           </div>
         </div>
+
+        <div className="footer-col">
+          <h4>Archivos descargables para Diseño Gráfico</h4>
+          <ul>
+            <li><a href="/downloads/resena-prensa.pdf" download>Reseña para Prensa</a></li>
+            <li><a href="/downloads/archivos-diseno.zip" download>Archivos de Diseño</a></li>
+            <li><a href="/downloads/rider-tecnico.pdf" download>Rider Técnico</a></li>
+          </ul>
+        </div>
       </div>
 
       {/* Row final de derechos */}
-      <div className="footer-bottom">
+      <div className="footer-bottom">  
         <p>© 2025 Raíces Dúo. Todos los derechos reservados.</p>
       </div>
     </footer>

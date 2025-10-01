@@ -9,6 +9,27 @@ header {
 
 }
 
+
+/* --- */
+
+.header-left, .header-right {
+  opacity: 0;
+  transform: translateX(0); /* se ajusta dinámicamente */
+  transition: all 0.8s ease-out;
+}
+
+/* Posiciones iniciales para animación lateral */
+.header-left { transform: translateX(-30px); }  /* entra desde la izquierda */
+.header-right { transform: translateX(30px); }  /* entra desde la derecha */
+
+/* Cuando aparece */
+.header-left.visible, .header-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ---- */
+
 .header-left, .header-right {
   margin-top: 3vmax;
   flex: 1 1 300px;

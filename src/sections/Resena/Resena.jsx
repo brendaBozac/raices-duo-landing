@@ -5,8 +5,28 @@ import Boton from "../../components/Boton/Boton";
 import waveImg from "../../../Img/wave-nosotros.svg";
 import nosotrosImg from "../../../Img/nosotros.jpg";
 import guardapampaImg from "../../../Img/guardapampaOscuro.png";
+import { useEffect } from "react";
 
 function Resena() {
+  useEffect(() => {
+    const floating = document.querySelector(".resena .floating");
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          floating.classList.add("visible");
+        } else {
+          floating.classList.remove("visible"); // opcional
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (floating) observer.observe(floating);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="resena" id="resena">
       {/* Imagen decorativa superior */}
@@ -16,14 +36,16 @@ function Resena() {
       <div className="resena-row">
         {/* Columna izquierda: texto y botón */}
         <div className="col-left">
-          <h2>Un poco más Sobre Nosotros</h2>
-          <p>
-            Hemos recorrido distintas provincias llevando nuestro folklore a bares, festivales,
-            diversos escenarios y programas de radio. 
-            Mayormente nos presentamos en formato de dúo, pero en ocasiones nos acompañan músicos amigos.
-            Cada show es nuestra celebración de las canciones que nos inspiran.
-          </p>
-          <Boton>Quiero Contactarme</Boton>
+          <div className="floating">
+            <h2>Un poco más Sobre Nosotros</h2>
+            <p>
+              Hemos recorrido distintas provincias llevando nuestro folklore a bares, festivales,
+              diversos escenarios y programas de radio. 
+              Mayormente nos presentamos en formato de dúo, pero en ocasiones nos acompañan músicos amigos.
+              Cada show es nuestra celebración de las canciones que nos inspiran.
+            </p>
+            <Boton>Quiero Contactarme</Boton>
+          </div>
         </div>
 
         {/* Columna derecha: imagen */}

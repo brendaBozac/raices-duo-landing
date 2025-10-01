@@ -1,5 +1,11 @@
+import './Boton.css'
+
 function Boton({ children, onClick }) {
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <button className="boton" onClick={onClick}>
+      {children}
+    </button>
+  );
 }
 
 export default Boton;

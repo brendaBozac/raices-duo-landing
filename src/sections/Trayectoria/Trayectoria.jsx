@@ -21,7 +21,7 @@ function Trayectoria() {
         {/* Columna derecha: texto */}
         <div className="col-right">
           <p>
-            Más allá de la experiencia individual que cada uno traía antes de conformar este proyecto como dúo, juntos hemos recorrido distintos escenarios de nuestro país, compartiendo giras y encuentros musicales. En Río Cuarto nos presentamos en espacios como Opus Costanera, Teatrino Trapalanda, el Teatro Municipal y la sala Leonardo Favio. Y por supuesto, nada se compara con la energía de las peñas y festivales al aire libre, que siempre ocupan un lugar especial en nuestro camino.
+            Sumando a la experiencia individual que cada uno traía antes de conformar este proyecto como dúo, juntos hemos recorrido distintos escenarios de nuestro país, compartiendo giras y encuentros musicales. En Río Cuarto nos presentamos en espacios como Opus Costanera, Teatrino Trapalanda, el Teatro Municipal y la sala Leonardo Favio. Y por supuesto, nada se compara con la energía de las peñas y festivales al aire libre, que siempre ocupan un lugar especial en nuestro camino.
           </p>
         </div>
       </div>

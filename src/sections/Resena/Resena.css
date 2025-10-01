@@ -1,11 +1,12 @@
-/* Sección Resena */
+/* Fondo degradado de toda la sección */
 .resena {
-  position: relative;
   background: linear-gradient(to bottom, var(--color-rosa), var(--color-turquesa));
-  color: var(--color-negro);
+  color: var(--color-bordo);
+  padding: 0.5vmax 0 0 0;
   overflow: hidden;
-  text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Imagen decorativa superior */
@@ -13,78 +14,151 @@
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: -5px; /* superposición ligera con la sección */
+  margin-top: -3vmax;
 }
 
-/* Row principal */
+/* Row con dos columnas */
 .resena-row {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
-
-  padding: 2vmax;
+  padding: 3rem 3rem;
+  width: 80%;
+  margin-bottom: 5vmax;
 }
 
-/* Columna izquierda: texto y botón */
-.resena-row .col-left {
+/* Columnas */
+.col-left, .col-right {
   flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.floating {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
+  text-align: center;
+  gap: 1.5vmax;
 }
 
-/* Columna derecha: imagen */
-.resena-row .col-right {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Texto */
+.col-left h2 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
+.col-left p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Imagen reseña */
 .resena-img {
-  width: 100%;
-  max-width: 400px;
+  /* border: solid 2px yellow; */
+  width: 80%;
+  /* width: 350px; */
   height: auto;
   border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(85%) contrast(120%) saturate(130%);
+  box-shadow: 
+    0 4px 12px rgba(0,0,0,0.15),
+    0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.resena-img:hover {
+  filter: brightness(90%) contrast(110%) saturate(120%);
+  transform: scale(1.02);
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.2),
+    0 12px 36px rgba(0,0,0,0.15);
 }
 
 /* Imagen decorativa inferior */
 .resena-guardapampa {
-  width: 100%;
+  width: 130%;
   height: auto;
   display: block;
-  /* margin-top: -5px; */ /* superposición con la sección siguiente */
-  margin-top: 5vmax;
-  margin-bottom: 0;
+  margin-top: -10px;
 }
 
-/* Tipografía */
-.resena h2 {
-  font-family: var(--font-title);
-  font-weight: 700;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
+/* Animaciones como Presentacion */
+.floating h2,
+.floating p,
+.floating .boton {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.6s ease-out;
 }
 
-.resena p {
-  font-family: var(--font-body);
-  font-weight: 400;
-  margin-bottom: 2rem;
-  line-height: 1.6;
+.floating.visible h2,
+.floating.visible p,
+.floating.visible .boton {
+  opacity: 1;
+  transform: translateY(0);
 }
+
+.floating.visible h2 { transition-delay: 0.2s; }
+.floating.visible p { transition-delay: 0.4s; }
+.floating.visible .boton { transition-delay: 0.6s; }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .resena-row {
-    flex-direction: column; /* apilar columnas */
+ /*  .resena {
+    margin-top: -3vmax;
+  
+  } */
+
+  .resena-wave-top {
+ 
+  display: none;
+  
   }
 
+
+  .resena-row {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 3vmax;
+    width: 100%;
+  }
+
+  .floating {
+    width: 80%;
+  }
+
+
   .resena-img {
-    max-width: 80%;
-    margin: 1rem auto 0;
+    width: 80%;          /* ocupa buena parte del contenedor */
+    object-fit: cover;
+    max-width: 350px;    /* no excede este tamaño */
+    height: auto;        /* mantiene la proporción original */
+    margin: 3vmax auto 6vmax auto;  /* centrada con espacios arriba y abajo */
+  }
+
+  .col-right {
+    display: flex;
+    justify-content: center; /* asegura que la imagen esté centrada */
+  }
+  .col-left h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .resena-guardapampa {
+   /*  width: 130%;
+  height: auto; */
+  display: none;
   }
 }

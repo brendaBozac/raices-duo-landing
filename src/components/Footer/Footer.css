@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(to bottom, var(--color-rosa), var(--color-bordo));
+  background: var(--color-bordo);
   color: var(--color-blanco);
   padding: 3rem 2rem 1rem 2rem;
   text-align: center;
@@ -16,6 +16,8 @@
   margin: 0;
   font-size: 1.5rem;
   font-family: var(--font-subtitle);
+  /* border: solid 2px yellow; */
+  text-align: left;
 }
 
 /* Contenedor columnas */
@@ -30,12 +32,17 @@
 .footer-col {
   flex: 1 1 250px;
   text-align: left;
+  /* border: 2px solid yellow; */
+  
 }
 
 .footer-col h4 {
   margin-bottom: 1rem;
   font-family: var(--font-title);
+  font-size: 1.4rem;
 }
+
+
 
 .footer-col ul {
   list-style: none;
@@ -45,6 +52,8 @@
 
 .footer-col ul li {
   margin-bottom: 0.5rem;
+  font-family: var(--font-subtitle);
+  font-weight: 400;
 }
 
 .footer-col ul li a {
@@ -68,16 +77,17 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-top: 2vmax;
 }
 
 /* Footer bottom */
 .footer-bottom {
-  margin-top: 2rem;
+  margin-top: 5rem;
   font-size: 0.9rem;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     text-align: center;
@@ -87,5 +97,52 @@
   }
   .footer-buttons {
     justify-content: center;
+  }
+
+  
+.footer-logo h3 {
+  text-align: center;
+}
+} */
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-col {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .footer-buttons {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-logo h3 {
+    text-align: center;
+    font-size: 4vmax; /* antes 1.5rem */
+  }
+
+  .footer-col h4 {
+    font-size: 3vmax; /* antes 1.4rem */
+    margin-bottom: 4vmax;
+  }
+
+  .footer-col ul li a{
+    font-size: 2.5vmax; /* un poco más chico para que no se vea cargado */
+  }
+
+  .footer-col p {
+    font-size: 2.4vmax;
+    line-height: 1.4; /* mejora la lectura en mobile */
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem; /* más discreto el copyright */
+    margin-top: 3rem;
   }
 }

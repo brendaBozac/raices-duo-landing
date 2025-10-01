@@ -1,6 +1,6 @@
  #root {
   
-  --color-bordo: #40140A;
+  --color-bordo: #260c06;
   --color-bordo-oscuro: #2b0d07; 
   --color-rosa: #c7b1a5;
   --color-blanco: #f2efe9;
@@ -20,7 +20,7 @@ body {
   padding: 0;
   background-color: var(--color-rosa);
   color: var(--color-negro);
-/*   line-height: 1.6; */
+  line-height: 1.6;
 }
 
 /* section {
@@ -42,6 +42,8 @@ p {
   font-family: var(--font-body);
   font-weight: 400;
 }
+
+
 
 /* 
 .logo {
