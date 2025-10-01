@@ -2,13 +2,13 @@ import './Galeria.css';
 import { useEffect, useRef, useState } from "react";
 
 // Importar imágenes
-import gal1 from "../../../Img/gal-1.jpg";
-import gal2 from "../../../Img/gal-2.jpg";
-import gal3 from "../../../Img/gal-3.jpg";
-import gal4 from "../../../Img/gal-4.jpg";
-import gal5 from "../../../Img/gal-5.jpg";
-import gal6 from "../../../Img/gal-6.jpg";
-import resenaFinal from "../../../Img/resena-final.jpg";
+import gal1 from "../../../Img/gal-1.JPG";
+import gal2 from "../../../Img/gal-2.JPG";
+import gal3 from "../../../Img/gal-3.JPG";
+import gal4 from "../../../Img/gal-4.JPG";
+import gal5 from "../../../Img/gal-5.JPG";
+import gal6 from "../../../Img/gal-6.JPG";
+import resenaFinal from "../../../Img/resena-final.JPG";
 
 function Galeria() {
   const refs = useRef([]);

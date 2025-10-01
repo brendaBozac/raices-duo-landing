@@ -1,5 +1,5 @@
 import './Footer.css';
-import logo from "../../../Img/raices-logo-navbar.png";
+// import logo from "../../../Img/raices-logo-navbar.png";
 import Boton from "../Boton/Boton"; // reutilizamos el componente de botones
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 

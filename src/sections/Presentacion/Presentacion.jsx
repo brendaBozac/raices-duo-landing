@@ -2,7 +2,7 @@ import './Presentacion.css';
 import { useEffect, useState } from "react";
 import Boton from "../../components/Boton/Boton";
 import guardapampaImg from "../../../Img/guardapampaClaro.png";
-import presentacionImg from "../../../Img/presentacion.jpg";
+import presentacionImg from "../../../Img/presentacion.JPG";
 import wavesImg from "../../../Img/wave-presentacion.svg";
 
 function Presentacion() {
