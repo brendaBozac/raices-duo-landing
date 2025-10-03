@@ -42,9 +42,9 @@ header {
   justify-content: end;
 }
 
-.header-right {
+/* .header-right {
   
-}
+} */
 
 .header-img {
   max-width: 80%;
@@ -88,7 +88,9 @@ header {
  
 
   .header-img {
-    max-width: 110%;
+    max-width: 100%;
+    /* border: solid 2px green; */
+   
     
   }
 
