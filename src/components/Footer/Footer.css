@@ -78,6 +78,7 @@
   align-items: center;
   gap: 0.5rem;
   margin-top: 2vmax;
+
 }
 
 /* Footer bottom */
@@ -142,7 +143,7 @@
   }
 
   .footer-bottom {
-    font-size: 0.8rem; /* más discreto el copyright */
+    font-size: 1.2 vmax; /* más discreto el copyright */
     margin-top: 3rem;
   }
 }

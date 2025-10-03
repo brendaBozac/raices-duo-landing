@@ -39,6 +39,7 @@ function Header() {
         <img src={logoHeader} alt="Raíces Dúo Logo" className="header-logo" />
         {/* H1 oculto para SEO */}
         <h1 className="visually-hidden">Raíces Dúo</h1>
+        <h2>La Esencia del Auténtico Folklore</h2>
       </div>
     </header>
   );

@@ -104,9 +104,10 @@
 
 
 .galeria-cta {
-  margin-top: 5vmax;
-  margin-bottom: 5vmax;
+  margin-top: 6vmax;
+  margin-bottom: 3vmax;
   text-align: center;
+  /* border: solid 2px green; */
 }
 
 .galeria-cta button {

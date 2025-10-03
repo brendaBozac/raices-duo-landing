@@ -11,14 +11,15 @@
 /* Título h2 */
 .trayectoria h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   color: var(--color-bordo);
+  margin-top: 5vmax;
 }
 
 /* Row principal */
 .trayectoria-row {
   display: flex;
-  padding: 5vmax 2rem;
+  padding: 2vmax;
 /*   gap: 2rem; */
   flex-wrap: wrap;
   align-items: center;
@@ -51,14 +52,19 @@
  */
 
 /* Imagen columna izquierda */
-.trayectoria-img {
-  /* max-width: 80%; */
+.contenedor-image .trayectoria-img {
+
   width: 100%;
   height: auto;
   border-radius: 12px;
   display: block;
   margin: 0 auto;
     /* border: solid 2px black; */
+}
+
+.contenedor-image .artista-caption {
+  font-size: 1.2vmax;
+  font-family: sans-serif;
 }
 
 /* Imagenes decorativas */
@@ -79,16 +85,17 @@ margin-bottom: 0;
   .trayectoria-row {
     flex-direction: column;
     padding: 2rem 1rem;
-    gap: 2vmax;
-    width: 80%;
+    /* gap: 2vmax; */
+    width: 90%;
     margin: 0 auto;
+    justify-content: center;
     /* border: solid 2px yellow; */
   }
 
   .trayectoria h2 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-top: 6vmax;
+    margin-top: 10vmax;
     margin-bottom: 3vmax;
     line-height: 1.3;
   color: var(--color-bordo);
@@ -96,17 +103,35 @@ margin-bottom: 0;
 
   .col-right p{
     width: 90%;
+    /* border: solid 2px red; */
+        margin-top: -3vmax;
+
   }
 
-  .trayectoria-img {
-    width: 90%;          /* ocupa buena parte del contenedor */
-  /*   max-width: 350px;  */   /* no excede este tamaño */
-    height: auto;        /* mantiene la proporción original */
-    margin: 0 auto;      /* centrada horizontalmente */
-    object-fit: cover;
-    /* border: solid 2px yellow; */
-    padding: 0;
+  .contenedor-image {
+    /* border: solid 2px red; */
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
   }
+
+  .contenedor-image .trayectoria-img {
+
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  padding: 0;
+    /* border: solid 2px black; */
+  }
+  
+  
+.contenedor-image .artista-caption {
+  font-size: 2vmax;
+  font-family: sans-serif;
+}
 
   .col-right {
     display: flex;

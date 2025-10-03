@@ -49,7 +49,8 @@ function Galeria() {
         ref={el => (refs.current[1] = el)}
         className={`fade-in ${visibleIndex.includes(1) ? "visible" : ""}`}
       >
-        Descargá tu Favorita para Diseño de Flyers
+        Descargá fotos para contenido gráfico y flyers.
+        
       </h3>
 
       {/* Primer row */}
@@ -89,7 +90,7 @@ function Galeria() {
         ref={el => (refs.current[4] = el)}
       >
         <a href="/downloads/galeria.zip" download>
-          <button>Descargar Pack</button>
+          <button>Descargar Fotos</button>
         </a>
       </div>
     </section>

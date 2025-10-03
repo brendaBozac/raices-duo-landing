@@ -14,10 +14,23 @@ function Trayectoria() {
       {/* Row principal */}
       <div className="trayectoria-row">
         {/* Columna izquierda: imagen */}
-        <div className="col-left">
-          <img src={resenaFinal} alt="Trayectoria Raíces Dúo" className="trayectoria-img" />
-        </div>
 
+       <div className="col-left">
+          {/* <img src={resenaFinal} alt="Trayectoria Raíces Dúo" className="trayectoria-img" /> */}
+        
+
+        <figure className='contenedor-image'>
+          <img 
+            src={resenaFinal} 
+            alt="Trayectoria Raíces Dúo" 
+            className="trayectoria-img" 
+          />
+          <figcaption className="artista-caption">
+            Gracias por tu obra Carlos Márquez
+          </figcaption>
+        </figure>
+      </div>
+      
         {/* Columna derecha: texto */}
         <div className="col-right">
           <p>

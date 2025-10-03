@@ -4,6 +4,7 @@ import Boton from "../../components/Boton/Boton";
 import guardapampaImg from "../../../Img/guardapampaClaro.png";
 import presentacionImg from "../../../Img/presentacion.JPG";
 import wavesImg from "../../../Img/wave-presentacion.svg";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 function Presentacion() {
   const [scrollDir, setScrollDir] = useState("down");
@@ -46,17 +47,19 @@ function Presentacion() {
       <div className="presentacion-row">
         <div className="col-left">
           <div className='floating'>
-            <h2>La Esencia del Auténtico Folklore</h2>
-            <h3>
+            <h2>Shows en vivo para Festivales, 
+              Bares y Eventos Privados</h2>
+            {/* <h3>
               Shows en vivo para Festivales, <br />
               Bares y Eventos Privados
-            </h3>
+            </h3> */}
             <p>
               Somos Maryta Villalón y César Degiovanni, músicos de Río Cuarto, amantes del folklore y su sonido raíz. 
               Trabajamos llevando nuestro Show a distintos tipos de eventos y escenarios. Rendimos homenaje 
               a poetas y cantores que dieron vida a nuestro cancionero, argentino y popular.
             </p>
-            <Boton>Contratá el Show</Boton>
+            <Boton className='floating-boton'  onClick={() => window.open("https://wa.me/1234567890", "_blank")}> Contratá el Show  <FaWhatsapp />
+            </Boton>
           </div>
         </div>
         <div className="col-right">

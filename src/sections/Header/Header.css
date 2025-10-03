@@ -42,9 +42,17 @@ header {
   justify-content: end;
 }
 
-/* .header-right {
-  
-} */
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* border: solid 2px yellow; */
+  margin-left: 2vmax;
+}
+
+.header-right h2 {
+  margin-top: 2vmax;
+}
 
 .header-img {
   max-width: 80%;
@@ -56,7 +64,8 @@ header {
 .header-logo {
   max-width: 60%;
   height: auto;
-  margin: 0 0  0 4vmax;
+/*   margin: 0 0  0 4vmax; */
+  /* border: solid 2px green; */
 }
 
 /* H1 oculto para SEO */
@@ -85,7 +94,10 @@ header {
     
   }
 
- 
+  .header-right {
+    margin: 0 auto;
+    align-items: center;
+  }
 
   .header-img {
     max-width: 100%;
@@ -98,4 +110,15 @@ header {
     max-width: 80%;
     margin: 2vmax 0;
   }
+}
+
+@media (max-width: 500px) {
+
+  .header-right h2{
+    align-items: center;
+    text-align: center;
+    font-size: 3vmax;
+    padding: 0 2vmax;
+  }
+
 }
