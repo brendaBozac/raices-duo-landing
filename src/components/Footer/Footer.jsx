@@ -52,7 +52,7 @@ function Footer() {
       <div className="footer-bottom">  
         <p>Fotografía de Silvina Requelme - VinaLuz</p>
 
-        <p>Diseño de Treno Digital - Brenda Bozac - Leonardo Riera - © 2025 Raíces Dúo. Todos los derechos reservados. </p>
+        <p>© 2025 - Diseño de Treno Digital <br/> Raíces Dúo. <br/>Todos los derechos reservados. </p>
       </div>
     </footer>
   );
