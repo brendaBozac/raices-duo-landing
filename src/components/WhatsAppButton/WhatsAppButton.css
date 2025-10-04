@@ -1,11 +1,11 @@
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
-  background-color: #25d366;
+  background-color: #25d365c9;
   color: white;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   display: flex;
   align-items: center;
