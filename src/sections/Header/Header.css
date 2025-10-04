@@ -6,7 +6,7 @@ header {
   /* background-color: var(--color-rosa); */
   background: radial-gradient(circle, #C7B1A5 0%, #9e7f73 60%, #5a4036 100%);
   flex-wrap: wrap;
-
+  overflow: hidden;
 }
 
 
