@@ -1,6 +1,6 @@
 import './Trayectoria.css'
 import guardapampaOscuro from "../../../Img/guardapampaOscuro.png";
-import resenaFinal from "../../../Img/trayectoria.png";
+import resenaFinal from "../../../Img/trayectoria.webp";
 
 function Trayectoria() {
   return (

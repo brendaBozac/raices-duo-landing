@@ -2,7 +2,7 @@ import './Presentacion.css';
 import { useEffect, useState } from "react";
 import Boton from "../../components/Boton/Boton";
 import guardapampaImg from "../../../Img/guardapampaClaro.png";
-import presentacionImg from "../../../Img/presentacion.JPG";
+import presentacionImg from "../../../Img/presentacion.webp";
 import wavesImg from "../../../Img/wave-presentacion.svg";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 

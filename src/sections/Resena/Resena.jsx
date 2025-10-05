@@ -3,7 +3,7 @@ import Boton from "../../components/Boton/Boton";
 
 // Importar imágenes
 import waveImg from "../../../Img/wave-nosotros.svg";
-import nosotrosImg from "../../../Img/nosotros.JPG";
+import nosotrosImg from "../../../Img/nosotros.webp";
 import guardapampaImg from "../../../Img/guardapampaOscuro.png";
 import { useEffect } from "react";
 

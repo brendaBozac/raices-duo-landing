@@ -1,6 +1,6 @@
 import './Header.css';
 import { useEffect } from "react";
-import ellosImg from '../../../Img/ellos.png';
+import ellosImg from '../../../Img/ellos.webp';
 import logoHeader from '../../../Img/raices-logo-header.png';
 
 function Header() {

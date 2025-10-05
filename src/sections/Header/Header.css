@@ -52,6 +52,9 @@ header {
 
 .header-right h2 {
   margin-top: 2vmax;
+  font-family: "Merienda", cursive;
+  font-size: 1.7vmax;
+  
 }
 
 .header-img {
@@ -88,6 +91,7 @@ header {
     padding: 1rem 1rem 0 1rem;
   }
 
+
   .header-left, .header-right {
     flex: 1 1 100%;
     justify-content: center;
@@ -97,6 +101,13 @@ header {
   .header-right {
     margin: 0 auto;
     align-items: center;
+  }
+
+  .header-right h2{
+    align-items: center;
+    text-align: center;
+    font-size: 3vmax;
+    padding: 0 2vmax;
   }
 
   .header-img {
@@ -112,13 +123,3 @@ header {
   }
 }
 
-@media (max-width: 500px) {
-
-  .header-right h2{
-    align-items: center;
-    text-align: center;
-    font-size: 3vmax;
-    padding: 0 2vmax;
-  }
-
-}
