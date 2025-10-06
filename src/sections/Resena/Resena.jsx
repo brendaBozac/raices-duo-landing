@@ -1,5 +1,6 @@
 import './Resena.css';
 import Boton from "../../components/Boton/Boton";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 // Importar imágenes
 import waveImg from "../../../Img/wave-nosotros.svg";
@@ -27,6 +28,11 @@ function Resena() {
     return () => observer.disconnect();
   }, []);
 
+  // ✅ Estas son las líneas nuevas (JavaScript dentro del componente)
+  const whatsappNumber = "5492964455088";
+  const message = "Hola Raíces Dúo! Quisiera contratar su show.";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
   return (
     <section className="resena" id="resena">
       {/* Imagen decorativa superior */}
@@ -44,7 +50,10 @@ function Resena() {
               Mayormente nos presentamos en formato de dúo, pero en ocasiones nos acompañan músicos amigos.
               Cada show es nuestra celebración de las canciones que nos inspiran.
             </p>
-            <Boton>Quiero Contactarme</Boton>
+            {/* ✅ Botón actualizado con conexión a WhatsApp */}
+            <Boton onClick={() => window.open(whatsappLink, "_blank")}>
+              Quiero Contactarme <FaWhatsapp />
+            </Boton>
           </div>
         </div>
 

@@ -1,22 +1,16 @@
 .footer {
   background: var(--color-bordo);
   color: var(--color-blanco);
-  padding: 3rem 2rem 1rem 2rem;
+  padding: 5vmax 6vmax 1vmax 6vmax;
   text-align: center;
-}
-
-/* Logo */
-.footer-logo img {
-  max-width: 150px;
-  height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  
 }
 
 .footer-logo h3 {
   margin: 0;
-  font-size: 1.5rem;
-  font-family: var(--font-subtitle);
-  /* border: solid 2px yellow; */
+  font-size: 2vmax;
+  font-family: "Merienda", cursive;
   text-align: left;
 }
 
@@ -27,6 +21,7 @@
   gap: 2rem;
   justify-content: center;
   margin-top: 2rem;
+  /* border: solid 6px black; */
 }
 
 .footer-col {
@@ -36,13 +31,38 @@
   
 }
 
+/* .icono-titulo {
+  border: solid 2px pink;
+  display: flex;
+
+} */
+
 .footer-col h4 {
   margin-bottom: 1rem;
   font-family: var(--font-title);
   font-size: 1.4rem;
+  /* border: 2px solid yellow; */
+  margin-top: 0;
 }
 
+.icono-contacto {
+  font-size: 3vmax;
+  color: var(--color-turquesa);
+  margin-bottom: 0.2vmax;
+  /* border: solid 2px yellow; */
+}
 
+.icono-descarga-gral {
+  font-size: 3vmax;
+  color: var(--color-turquesa);
+  margin-bottom: 0.2vmax;
+  /* border: solid 2px yellow; */
+}
+
+.icono-descarga {
+  padding-right: 0.4vmax;
+  margin-bottom: 0;
+}
 
 .footer-col ul {
   list-style: none;
@@ -87,24 +107,17 @@
   font-size: 0.9rem;
 }
 
-/* Responsive */
-/* @media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer-col {
-    text-align: center;
-  }
-  .footer-buttons {
-    justify-content: center;
-  }
+.hr-footer {
+  width: 50%;
+  border: none;           /* quitamos el borde por defecto */
+  height: 1.5px;            /* controla el grosor de la línea */
+  background-color: var(--color-rosa);
+  margin: 2rem auto;      /* centrado y espaciado */
+  opacity: 0.5;           /* opcional: transparencia */
 
-  
-.footer-logo h3 {
-  text-align: center;
 }
-} */
+
+/* Responsive */
 
 @media (max-width: 768px) {
   .footer-content {

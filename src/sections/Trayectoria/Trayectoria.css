@@ -63,9 +63,9 @@
 }
 
 .contenedor-image .artista-caption {
-  font-size: 1.2vmax;
+  font-size: 14px;
   font-family: sans-serif;
-}
+} 
 
 /* Imagenes decorativas */
 .wave-top, .wave-bottom {

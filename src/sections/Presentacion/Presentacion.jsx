@@ -41,31 +41,42 @@ function Presentacion() {
     return () => observer.disconnect();
   }, [scrollDir]);
 
+  // ✅ Nuevas líneas con el mismo formato que los otros componentes
+  const whatsappNumber = "5492964455088";
+  const message = "Hola Raíces Dúo! Quisiera contratar su show.";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
   return (
     <section id='presentacion'>
       <img src={guardapampaImg} alt="Detalle decorativo" className="guardapampa" />
       <div className="presentacion-row">
         <div className="col-left">
           <div className='floating'>
-            <h2>Shows en vivo para Festivales, 
-              Bares y Eventos Privados</h2>
-            {/* <h3>
-              Shows en vivo para Festivales, <br />
+            <h2>
+              Shows en vivo para Festivales, 
               Bares y Eventos Privados
-            </h3> */}
+            </h2>
             <p>
               Somos Maryta Villalón y César Degiovanni, músicos de Río Cuarto, amantes del folklore y su sonido raíz. 
               Trabajamos llevando nuestro Show a distintos tipos de eventos y escenarios. Rendimos homenaje 
               a poetas y cantores que dieron vida a nuestro cancionero, argentino y popular.
             </p>
-            <Boton className='floating-boton'  onClick={() => window.open("https://wa.me/1234567890", "_blank")}> Contratá el Show  <FaWhatsapp />
+
+            {/* ✅ Botón actualizado con enlace de WhatsApp unificado */}
+            <Boton
+              className='floating-boton'
+              onClick={() => window.open(whatsappLink, "_blank")}
+            >
+              Contratá el Show <FaWhatsapp />
             </Boton>
           </div>
         </div>
+
         <div className="col-right">
           <img src={presentacionImg} alt="Presentación Raíces Dúo" className="presentacion-img" />
         </div>
       </div>
+
       <img src={wavesImg} alt="Decoración waves" className="waves-one" />
     </section>
   );

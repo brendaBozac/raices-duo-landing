@@ -85,12 +85,9 @@ function Galeria() {
       </div>
 
       {/* Botón CTA */}
-      <div
-        className={`galeria-cta fade-in ${visibleIndex.includes(4) ? "visible" : ""}`}
-        ref={el => (refs.current[4] = el)}
-      >
+      <div className="galeria-cta">
         <a href="/downloads/galeria.zip" download>
-          <button>Descargar Fotos</button>
+          <button className="boton-fijo">Descargar Fotos</button>
         </a>
       </div>
     </section>

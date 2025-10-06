@@ -3,9 +3,18 @@ import './Footer.css';
 import Boton from "../Boton/Boton"; // reutilizamos el componente de botones
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
+import { FaDownload } from "react-icons/fa6";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { IoPeople } from "react-icons/io5";
+
 function Footer() {
+  // ✅ Nuevas líneas agregadas: número, mensaje y link de WhatsApp
+  const whatsappNumber = "5492964455088";
+  const message = "Hola Raíces Dúo! Quisiera contratar su show.";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
   return (
-    <footer className="footer">
+    <footer className="footer" id="contacto">
       {/* Logo */}
       <div className="footer-logo">
         {/* <img src={logo} alt="Raíces Dúo Logo" /> */}
@@ -14,45 +23,59 @@ function Footer() {
 
       {/* Contenido principal: dos columnas */}
       <div className="footer-content">
-        {/* Columna izquierda */}
-        {/* <div className="footer-col">
-          <h4>Archivos descargables para Diseño Gráfico</h4>
-          <ul>
-            <li><a href="/downloads/resena-prensa.pdf" download>Reseña para Prensa</a></li>
-            <li><a href="/downloads/archivos-diseno.zip" download>Archivos de Diseño</a></li>
-            <li><a href="/downloads/rider-tecnico.pdf" download>Rider Técnico</a></li>
-          </ul>
-        </div> */}
-
-        {/* Columna derecha */}
+        {/* Columna derecha: contacto */}
         <div className="footer-col">
-          <h4>Por Consultas y Contrataciones</h4>
-          <p>Comunicate directamente a Nuestro Whatsapp <br/> o por Redes Sociales</p>
+          <div className='icono-titulo'>
+            <IoPeople className="icono-contacto" />
+            <h4>Por Consultas y Contrataciones</h4>
+          </div>
+          
+          <p>
+            Comunicate directamente a Nuestro Whatsapp <br /> o por Redes Sociales
+          </p>
           <div className="footer-buttons">
-            <Boton onClick={() => window.open("https://wa.me/1234567890", "_blank")}>
+            {/* ✅ Botón de WhatsApp actualizado */}
+            <Boton onClick={() => window.open(whatsappLink, "_blank")}>
               <FaWhatsapp /> Whatsapp
             </Boton>
+
+            {/* ✅ Botón de Instagram funcionando */}
             <Boton onClick={() => window.open("https://instagram.com/raicesduo", "_blank")}>
               <FaInstagram /> Instagram
             </Boton>
           </div>
         </div>
 
+        {/* Columna izquierda: archivos descargables */}
         <div className="footer-col">
+          <FaDownload className="icono-descarga-gral" />
           <h4>Archivos descargables para Diseño Gráfico</h4>
           <ul>
-            <li><a href="/downloads/resena-prensa.pdf" download>Reseña para Prensa</a></li>
-            <li><a href="/downloads/archivos-diseno.zip" download>Archivos de Diseño</a></li>
-            <li><a href="/downloads/rider-tecnico.pdf" download>Rider Técnico</a></li>
+            <li>
+              
+              <a href="/downloads/ResenaRaices.pdf" download> <MdOutlineFileDownload className="icono-descarga" /> Reseña para Prensa</a></li>
+
+            <li>
+              
+              <a href="/downloads/archivos-diseno.zip" download> <MdOutlineFileDownload className="icono-descarga" /> Archivos de Diseño</a></li>
+
+            <li>
+              
+              <a href="/downloads/RiderTecnicoRaices.pdf" download>  Rider Técnico</a></li>
           </ul>
         </div>
       </div>
 
       {/* Row final de derechos */}
-      <div className="footer-bottom">  
+      <div className="footer-bottom"> 
+        <hr className='hr-footer'/> 
         <p>Fotografía de Silvina Requelme - VinaLuz</p>
 
-        <p>© 2025 - Diseño de Treno Digital <br/> Raíces Dúo. <br/>Todos los derechos reservados. </p>
+        <p>
+          © 2025 - Diseño de Treno Digital <br />
+          Raíces Dúo. <br />
+          Todos los derechos reservados.
+        </p>
       </div>
     </footer>
   );
