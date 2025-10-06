@@ -68,7 +68,7 @@
   border-radius: 12px;
   display: block;
   margin: 0 auto;
-  filter: brightness(85%) contrast(120%) saturate(130%);
+  filter: brightness(85%) contrast(120%) saturate(110%);
   box-shadow: 
     0 4px 12px rgba(0,0,0,0.15),
     0 8px 20px rgba(0,0,0,0.1);
@@ -142,7 +142,7 @@
     object-fit: cover;
     max-width: 350px;    /* no excede este tamaño */
     height: auto;        /* mantiene la proporción original */
-    margin: 3vmax auto 6vmax auto;  /* centrada con espacios arriba y abajo */
+    margin: 4vmax auto 2vmax auto;  /* centrada con espacios arriba y abajo */
   }
 
   .col-right {

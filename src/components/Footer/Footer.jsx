@@ -61,7 +61,7 @@ function Footer() {
 
             <li>
               
-              <a href="/downloads/RiderTecnicoRaices.pdf" download>  Rider Técnico</a></li>
+              <a href="/downloads/RiderTecnicoRaices.pdf" download> <MdOutlineFileDownload className="icono-descarga" /> Rider Técnico</a></li>
           </ul>
         </div>
       </div>

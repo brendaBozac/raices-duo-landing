@@ -95,8 +95,8 @@ margin-bottom: 0;
   .trayectoria h2 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-top: 10vmax;
-    margin-bottom: 3vmax;
+    margin-top: 6vmax;
+    margin-bottom: 0;
     line-height: 1.3;
   color: var(--color-bordo);
 }

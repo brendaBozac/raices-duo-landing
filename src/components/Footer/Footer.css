@@ -131,6 +131,28 @@
     margin: 0 auto;
   }
 
+  
+  .icono-contacto {
+    font-size: 5vmax;
+    color: var(--color-turquesa);
+    margin-bottom: 0.2vmax;
+    margin-top: 2vmax;
+    /* border: solid 2px yellow; */
+  }
+
+  .icono-descarga-gral {
+    font-size: 5vmax;
+    color: var(--color-turquesa);
+    margin-bottom: 0.2vmax;
+    margin-top: 2vmax;
+    /* border: solid 2px yellow; */
+  }
+
+  .icono-descarga {
+    padding-right: 0.8vmax;
+    margin-bottom: 0;
+  }
+
   .footer-buttons {
     justify-content: center;
     flex-direction: column;
