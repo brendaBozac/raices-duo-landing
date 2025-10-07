@@ -40,7 +40,7 @@ function Footer() {
             </Boton>
 
             {/* ✅ Botón de Instagram funcionando */}
-            <Boton onClick={() => window.open("https://instagram.com/raicesduo", "_blank")}>
+            <Boton onClick={() => window.open("https://www.instagram.com/cesar_maryta_raices24/", "_blank")}>
               <FaInstagram /> Instagram
             </Boton>
           </div>
