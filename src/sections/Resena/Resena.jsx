@@ -29,7 +29,7 @@ function Resena() {
   }, []);
 
   // ✅ Estas son las líneas nuevas (JavaScript dentro del componente)
-  const whatsappNumber = "5492964455088";
+  const whatsappNumber = "5493585165655";
   const message = "Hola Raíces Dúo! Quisiera contratar su show.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
