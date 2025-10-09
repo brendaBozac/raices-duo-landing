@@ -47,7 +47,7 @@ function Resena() {
             <p>
               Hemos recorrido distintas provincias llevando nuestro folklore a bares, festivales,
               diversos escenarios y programas de radio. 
-              Mayormente nos presentamos en formato de dúo, pero en ocasiones nos acompañan músicos amigos.
+              Mayormente nos presentamos en formato de dúo, pero en ocasiones nos presentamos en formato banda, con prestigiosos músicos de la escena nacional.
               Cada show es nuestra celebración de las canciones que nos inspiran.
             </p>
             {/* ✅ Botón actualizado con conexión a WhatsApp */}

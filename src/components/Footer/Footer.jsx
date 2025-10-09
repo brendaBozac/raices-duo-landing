@@ -6,7 +6,7 @@ import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { IoPeople } from "react-icons/io5";
-
+// import { FaInstagram } from "react-icons/fa";
 function Footer() {
   // ✅ Nuevas líneas agregadas: número, mensaje y link de WhatsApp
   const whatsappNumber = "5493585165655";
@@ -57,7 +57,7 @@ function Footer() {
 
             <li>
               
-              <a href="/downloads/archivos-diseno.zip" download> <MdOutlineFileDownload className="icono-descarga" /> Archivos de Diseño</a></li>
+              <a href="/downloads/raices-grafica-descargable.zip" download> <MdOutlineFileDownload className="icono-descarga" /> Archivos de Diseño</a></li>
 
             <li>
               
@@ -69,7 +69,18 @@ function Footer() {
       {/* Row final de derechos */}
       <div className="footer-bottom"> 
         <hr className='hr-footer'/> 
-        <p>Fotografía de Silvina Requelme - VinaLuz</p>
+        <p>
+          Fotografía de &nbsp;
+          <a
+            href="https://www.instagram.com/vinaluzph/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-instagram"
+          >
+            <FaInstagram className="icono-instagram" />
+            &nbsp; Silvina Requelme - VinaLuz
+          </a>
+        </p>
 
         <p>
           © 2025 - Diseño de Treno Digital <br />

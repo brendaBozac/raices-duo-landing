@@ -117,6 +117,15 @@
 
 }
 
+p a {
+  color: #9ec3ff; /* azul clarito */
+  text-decoration: none; /* elimina el subrayado si querés */
+}
+
+p a:hover {
+  text-decoration: underline; /* subraya al pasar el mouse */
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {

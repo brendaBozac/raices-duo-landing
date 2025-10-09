@@ -86,7 +86,7 @@ function Galeria() {
 
       {/* Botón CTA */}
       <div className="galeria-cta">
-        <a href="/downloads/galeria.zip" download>
+        <a href="/downloads/raices-grafica-descargable.zip" download>
           <button className="boton-fijo">Descargar Fotos</button>
         </a>
       </div>
