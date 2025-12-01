@@ -9,7 +9,7 @@ import { IoPeople } from "react-icons/io5";
 // import { FaInstagram } from "react-icons/fa";
 function Footer() {
   // ✅ Nuevas líneas agregadas: número, mensaje y link de WhatsApp
-  const whatsappNumber = "5493585165655";
+  const whatsappNumber = "5493585128166";
   const message = "Hola Raíces Dúo! Quisiera contratar su show.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 

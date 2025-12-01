@@ -42,7 +42,7 @@ function Presentacion() {
   }, [scrollDir]);
 
   // ✅ Nuevas líneas con el mismo formato que los otros componentes
-  const whatsappNumber = "5493585165655";
+  const whatsappNumber = "5493585128166";
   const message = "Hola Raíces Dúo! Quisiera contratar su show.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
